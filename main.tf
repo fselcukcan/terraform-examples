@@ -1,11 +1,11 @@
 module "work_queue" {
-    source = "git@github.com:fselcukcan/terraform-sqs-with-backoff.git"
+    source = "git@github.com:fselcukcan/terraform-sqs-with-backoff.git?ref=v2.0.0"
     queue_name = "work-queue"
     env = var.env
 }
 
 module "thread_queue" {
-    source = "git@github.com:fselcukcan/terraform-sqs-with-backoff.git"
+    source = "git@github.com:fselcukcan/terraform-sqs-with-backoff.git?ref=v2.0.0"
     queue_name = "thread-queue"
     env = var.env
 }

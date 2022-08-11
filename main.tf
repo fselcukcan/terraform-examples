@@ -3,5 +3,6 @@ provider "aws" {
 }
 
 resource "aws_sqs_queue" "test_queue" {
-    name = "test_queue"
+    name = "my_queue"
+    visibility_timeout_seconds = 45
 }
